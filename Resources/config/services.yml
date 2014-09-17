@@ -8,7 +8,12 @@ parameters:
     tebru_executioner.attempt_bound_termination_factory.class: Tebru\Executioner\Factory\TerminationStrategy\AttemptBoundFactory
     tebru_executioner.single_attempt_termination_factory.class: Tebru\Executioner\Factory\TerminationStrategy\SingleAttemptFactory
     tebru_executioner.time_bound_termination_factory.class: Tebru\Executioner\Factory\TerminationStrategy\TimeBoundFactory
+
     tebru_executioner.exception_logger_factory.class: Tebru\Executioner\Factory\ExceptionLoggerFactory
+    
+    tebru_executioner.executor.class: Tebru\Executioner\Executor
+    tebru_executioner_wait_strategy.class: Tebru\Executioner\Strategy\WaitStrategy
+    tebru_executioner_termination_strategy.class: Tebru\Executioner\Strategy\TerminationStrategy
 
 services:
     tebru_executioner.defaut_exception_logger:
