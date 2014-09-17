@@ -19,6 +19,7 @@ parameters:
     tebru_executioner.single_attempt_termination_factory.class: Tebru\Executioner\Factory\TerminationStrategy\SingleAttemptFactory
     tebru_executioner.time_bound_termination_factory.class: Tebru\Executioner\Factory\TerminationStrategy\TimeBoundFactory
 
+    tebru_executioner.executor_factory.class: Tebru\Executioner\Factory\ExecutorFactory
     tebru_executioner.exception_logger_factory.class: Tebru\Executioner\Factory\ExceptionLoggerFactory
     
     tebru_executioner.executor.class: Tebru\Executioner\Executor
@@ -32,3 +33,28 @@ services:
     tebru_executioner.defaut_exception_logger:
         class: Tebru\Executioner\Logger\ExceptionLogger
         arguments: [@tebru_executioner.null_logger]
+
+    # factories
+    tebru_executioner.exponential_wait_factory:
+        class: %tebru_executioner.exponential_wait_factory.class%
+    tebru_executioner.fibonacci_wait_factory:
+        class: %tebru_executioner.fibonacci_wait_factory.class%
+    tebru_executioner.linear_wait_factory:
+        class: %tebru_executioner.linear_wait_factory.class%
+    tebru_executioner.logarithmic_wait_factory:
+        class: %tebru_executioner.logarithmic_wait_factory.class%
+    tebru_executioner.null_wait_factory:
+        class: %tebru_executioner.null_wait_factory.class%
+    tebru_executioner.static_wait_factory:
+        class: %tebru_executioner.static_wait_factory.class%
+    tebru_executioner.attempt_bound_termination_factory:
+        class: %tebru_executioner.attempt_bound_termination_factory.class%
+    tebru_executioner.single_attempt_termination_factory:
+        class: %tebru_executioner.single_attempt_termination_factory.class%
+    tebru_executioner.time_bound_termination_factory:
+        class: %tebru_executioner.time_bound_termination_factory.class%
+
+    tebru_executioner.executor_factory:
+        class: %tebru_executioner.executor_factory.class%
+    tebru_executioner.exception_logger_factory:
+        class: %tebru_executioner.exception_logger_factory.class%
