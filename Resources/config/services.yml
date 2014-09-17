@@ -22,6 +22,7 @@ parameters:
     tebru_executioner.executor_factory.class: Tebru\Executioner\Factory\ExecutorFactory
     tebru_executioner.exception_logger_factory.class: Tebru\Executioner\Factory\ExceptionLoggerFactory
     
+    tebru_executioner.exception_logger.class: Tebru\Executioner\Logger\ExceptionLogger
     tebru_executioner.executor.class: Tebru\Executioner\Executor
     tebru_executioner_wait_strategy.class: Tebru\Executioner\Strategy\WaitStrategy
     tebru_executioner_termination_strategy.class: Tebru\Executioner\Strategy\TerminationStrategy
