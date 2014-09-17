@@ -1,4 +1,14 @@
 parameters:
+    tebru_executioner.exponential_wait_strategy.class: Tebru\Executioner\Strategy\Wait\ExponentialWait
+    tebru_executioner.fibonacci_wait_strategy.class: Tebru\Executioner\Strategy\Wait\FibonacciWait
+    tebru_executioner.linear_wait_strategy.class: Tebru\Executioner\Strategy\Wait\LinearWait
+    tebru_executioner.logarithmic_wait_strategy.class: Tebru\Executioner\Strategy\Wait\LogarithmicWait
+    tebru_executioner.null_wait_strategy.class: Tebru\Executioner\Strategy\Wait\NullWait
+    tebru_executioner.static_wait_strategy.class: Tebru\Executioner\Strategy\Wait\StaticWait
+    tebru_executioner.attempt_bound_termination_strategy.class: Tebru\Executioner\Strategy\Termination\AttemptBoundStrategy
+    tebru_executioner.single_attempt_termination_strategy.class: Tebru\Executioner\Strategy\Termination\SingleAttemptStrategy
+    tebru_executioner.time_bound_termination_strategy.class: Tebru\Executioner\Strategy\Termination\TimeBoundStrategy
+
     tebru_executioner.exponential_wait_factory.class: Tebru\Executioner\Factory\WaitStrategy\ExponentialWaitFactory
     tebru_executioner.fibonacci_wait_factory.class: Tebru\Executioner\Factory\WaitStrategy\FibonacciWaitFactory
     tebru_executioner.linear_wait_factory.class: Tebru\Executioner\Factory\WaitStrategy\LinearWaitFactory
@@ -16,7 +26,9 @@ parameters:
     tebru_executioner_termination_strategy.class: Tebru\Executioner\Strategy\TerminationStrategy
 
 services:
+    tebru_executioner.null_logger:
+        class: Psr\Log\NullLogger
+
     tebru_executioner.defaut_exception_logger:
         class: Tebru\Executioner\Logger\ExceptionLogger
-        factory_class: %tebru_executioner.exception_logger_factory.class%
-        factory_method: make
+        arguments: [@tebru_executioner.null_logger]
