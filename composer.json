@@ -1,0 +1,21 @@
+{
+    "name": "tebru/executioner-bundle",
+    "description": "Allows the use of the Executioner library in a Symfony2 project.",
+    "require": {
+        "php": ">=5.4",
+        "tebru/executioner": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nate Brunette",
+            "email": "n@tebru.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tebru\\ExecutionerBundle\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
