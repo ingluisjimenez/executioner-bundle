@@ -3,7 +3,7 @@
     "description": "Allows the use of the Executioner library in a Symfony2 project.",
     "require": {
         "php": ">=5.4",
-        "tebru/executioner": "~0.1"
+        "tebru/executioner": "~0.2"
     },
     "license": "MIT",
     "authors": [
