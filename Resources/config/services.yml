@@ -1,5 +1,6 @@
 parameters:
     tebru_executioner.executor_factory.class: Tebru\Executioner\Factory\ExecutorFactory
+    tebru_executioner.executor.class: Tebru\Executioner\Executor
 
 services:
     tebru_executioner.executor_factory:
