@@ -104,16 +104,16 @@
         },
         {
             "name": "tebru/executioner",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tebru/executioner.git",
-                "reference": "51eacb3d5e98f9cd8cacdcf3e66e8dc1a3eaa8b9"
+                "reference": "1d657767ce343c7a7196d07edc163f01f0b78ff3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tebru/executioner/zipball/51eacb3d5e98f9cd8cacdcf3e66e8dc1a3eaa8b9",
-                "reference": "51eacb3d5e98f9cd8cacdcf3e66e8dc1a3eaa8b9",
+                "url": "https://api.github.com/repos/tebru/executioner/zipball/1d657767ce343c7a7196d07edc163f01f0b78ff3",
+                "reference": "1d657767ce343c7a7196d07edc163f01f0b78ff3",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 }
             ],
             "description": "Provides a library for handling PHP exceptions when you would like to retry execution.",
-            "time": "2015-01-11 22:57:24"
+            "time": "2015-01-11 23:47:07"
         }
     ],
     "packages-dev": [],
