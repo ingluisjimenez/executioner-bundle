@@ -6,4 +6,3 @@ services:
     executor_factory: @tebru_executioner.executor_factory
     tebru_executioner.executor_factory:
         class: %tebru_executioner.executor_factory.class%
-        arguments: [@event_dispatcher]
