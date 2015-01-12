@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6102bb0a4be4b5742ad3eac57df59c99",
+    "hash": "8d5d13247ac319b0e4e2eec43445e883",
     "packages": [
         {
             "name": "psr/log",
@@ -104,16 +104,16 @@
         },
         {
             "name": "tebru/executioner",
-            "version": "v0.3.3",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tebru/executioner.git",
-                "reference": "366462e095bfe6b4d3ddd886811093ee3ff1fa7e"
+                "reference": "940767f1f5a4073770c53eb745d6b34875ccf91b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tebru/executioner/zipball/366462e095bfe6b4d3ddd886811093ee3ff1fa7e",
-                "reference": "366462e095bfe6b4d3ddd886811093ee3ff1fa7e",
+                "url": "https://api.github.com/repos/tebru/executioner/zipball/940767f1f5a4073770c53eb745d6b34875ccf91b",
+                "reference": "940767f1f5a4073770c53eb745d6b34875ccf91b",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 }
             ],
             "description": "Provides a library for handling PHP exceptions when you would like to retry execution.",
-            "time": "2015-01-12 01:08:27"
+            "time": "2015-01-12 02:09:22"
         }
     ],
     "packages-dev": [],
